@@ -108,3 +108,33 @@ img{
 .module_filtre p{
     margin: 0px 21px;
 }
+
+.info{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.info div{
+    margin-right: 13px;
+    border: 2px solid #F2F2F2;
+    padding: 9px;
+    height: 2px;
+    width: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 35px;
+}
+
+.info div i{
+    font-weight: 900;
+    font-size: 11px;
+    color: #0065FC;
+}
+
+.info p{
+    font-size: 0.85em;
+}
+
+
