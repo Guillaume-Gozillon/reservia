@@ -75,18 +75,36 @@ img{
 
 .filtres{
     display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.module_filtre{
+    display: flex;
+    align-items: center;
+    border: #F2F2F2 2px solid;
+    border-radius: 35px;
+    height: 35px;
+    margin: 0 10px;
+    box-sizing: border-box;
 }
 
 .module_filtre div{
     display: flex;
     align-items: center;
-    margin: 0 10px;
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    margin: -2px;
 }
 
 .module_filtre div i{
-    border: #1b2121 1px solid;
-    border-radius: 50%;
-    width: 26px;
-    height: 26px;
+    color: #0065FC;
+    padding: 10px 10px;
+    font-weight: 700;
 }
 
+.module_filtre p{
+    margin: 0px 21px;
+}
