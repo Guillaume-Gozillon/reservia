@@ -1,1 +1,92 @@
-body
+body{
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    max-width: 1280px;
+    padding: 25px 50px;
+}
+
+/* Stylisation du nav */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 100px;
+    height: 100%;
+}
+
+.menu ul{
+    display: flex;
+}
+li{
+    list-style: none;
+}
+
+.sep{
+    margin: 0 35px;
+}
+
+/* Stylisation du header */
+
+.intro{
+    margin-top: 28px;
+}
+
+.module{
+    display: flex;
+    align-items: center;
+    width: max-content;
+    font-weight: 600;
+    border-radius: 8px;
+    overflow: hidden;
+    border: #ececec 1px solid;
+}
+
+.module p, .module i{
+    margin: 0;
+}
+
+.location{
+    padding: 10px;
+    background-color: #e8e8e8;
+}
+
+.search{
+    padding: 10px;
+}
+
+.search p{
+    margin: 0 65px 0 0;
+}
+
+.autre{
+    padding: 10px;
+    background-color: #0065FC;
+    color: white;
+}
+
+img{
+    width: 200px;
+}
+
+.filtres{
+    display: flex;
+}
+
+.module_filtre div{
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.module_filtre div i{
+    border: #1b2121 1px solid;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+}
+
