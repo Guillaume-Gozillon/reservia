@@ -137,4 +137,32 @@ img{
     font-size: 0.85em;
 }
 
+/* Stylisation de la section gauche */
 
+.container_left{
+    background-color: #F2F2F2;
+    width: 60%;
+    border-radius: 20px;
+    padding: 13px 25px;
+}
+
+
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.fiche{
+    background-color: white;
+    width: 220px;
+    height: 240px;
+    border-radius: 20px;
+    padding: 6px;
+}
+
+.fiche img{
+    width: 220px;
+    border-radius: 14px 14px 0 0;
+    height: 126px;
+}
