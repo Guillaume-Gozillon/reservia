@@ -165,16 +165,18 @@ img{
     width: 60%;
     border-radius: 20px;
     padding: 13px 25px;
-    height: 600px;
 }
 
+.container_left p:first-child{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
 
 .wrap{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: space-between;
-    height: 470px;
 }
 
 .fiche{
@@ -186,6 +188,7 @@ img{
     box-shadow: 0 1px 2px rgba(0,0,0,0.15);
     transition: box-shadow 0.3s ease-in-out;
     cursor: pointer;
+    margin: 15px 10px;
 }
 
 .fiche:hover{
@@ -234,7 +237,17 @@ img{
     padding: 30px 20px 0;
 }
 
+.center_txt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 89%;
+    font-size: 1.1rem;
+}
 
+.center_txt p{
+    margin-right: 10px;
+}
 
 .populaire{
     display: flex;
@@ -246,6 +259,7 @@ img{
     box-shadow: 0 1px 2px rgba(0,0,0,0.15);
     transition: box-shadow 0.3s ease-in-out;
     cursor: pointer;
+    width: 360px;
 }
 
 .populaire:hover{
@@ -271,3 +285,75 @@ img{
 .populaire__container p:last-child{
     font-weight: 100;
 }
+
+/* ACTIVITES */
+
+.activites{
+    margin-top: 100px;
+    display: flex;
+}
+
+
+
+@media only screen and (max-width: 1374px) {
+    .container_left{
+        width: 50%;
+    }
+
+    .centrer div:last-child{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+/*test*/ 
+
+@media only screen and (max-width: 1122px) {
+    .vignette{
+        flex-direction: column;
+    }
+
+    .container_left{
+        width: 95%;
+        margin-bottom: 30px;
+    }
+
+    .container_right{
+        width: 100%;
+    }
+
+    .center_container{
+        justify-content: space-around;
+    }
+
+    .center_txt{
+        justify-content: flex-start;
+    }
+}
+
+
+/* BACKUP
+@media only screen and (max-width: 1122px) {
+    .container_left{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .vignette{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container_left{
+        width: 350px;
+        margin-bottom: 40px;
+        margin-top: 25px;
+    }
+
+    .container_right{
+        width: 43%;
+    }
+}
+
