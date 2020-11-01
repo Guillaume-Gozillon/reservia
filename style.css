@@ -1,12 +1,16 @@
 body{
-    margin: auto;
+    margin: 0;
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
-    max-width: 1280px;
-    padding: 25px 50px;
 }
 
 /* Stylisation du nav */
+
+.largeur{
+    margin: auto;
+    max-width: 1280px;
+    padding: 25px 50px;
+}
 
 nav{
     display: flex;
@@ -88,10 +92,6 @@ li{
     padding: 10px;
     background-color: #0065FC;
     color: white;
-}
-
-img{
-    width: 200px;
 }
 
 .filtres{
@@ -185,14 +185,14 @@ img{
     height: 210px;
     border-radius: 20px;
     padding: 6px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    box-shadow: 0 1px 22px rgba(0,0,0,0.13);
     transition: box-shadow 0.3s ease-in-out;
     cursor: pointer;
     margin: 15px 10px;
 }
 
 .fiche:hover{
-    box-shadow: 0px 2px 14px 0px rgba(0,0,0,0.56);
+    box-shadow: 0px 2px 24px 0px rgba(0,0,0,0.45);
 }
 
 .fiche img{
@@ -256,14 +256,14 @@ img{
     background-color: white;
     height: 153px;
     border-radius: 25px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    box-shadow: 0 1px 22px rgba(0,0,0,0.13);
     transition: box-shadow 0.3s ease-in-out;
     cursor: pointer;
     width: 360px;
 }
 
 .populaire:hover{
-    box-shadow: 0px 2px 14px 0px rgba(0,0,0,0.56);
+    box-shadow: 0px 2px 24px 0px rgba(0,0,0,0.45);
 }
 
 .populaire img{
@@ -289,11 +289,75 @@ img{
 /* ACTIVITES */
 
 .activites{
-    margin-top: 100px;
     display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
+.activites_container{
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 1px 22px rgba(0,0,0,0.13);
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
 
+.activites_container:hover{
+    box-shadow: 0px 2px 24px 0px rgba(0,0,0,0.45);
+}
+ 
+.activites_container img{
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.activites_container p{
+    font-weight: 600;
+    margin-left: 19px;
+}
+
+.large img{
+    height: 480px;
+}
+
+.last{
+    margin-top: 100px;
+}
+
+.activites_sub_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    background-color: #F2F2F2;
+    height: 210px;
+}
+
+footer div{
+    margin-right: 20%;
+    min-width: 220px;
+}
+
+footer div:first-child{
+    margin-left: 5%;
+}
+
+footer ul{
+    padding: 0;
+}
+
+footer li{
+    margin: 10px 0;
+}
 
 @media only screen and (max-width: 1374px) {
     .container_left{
@@ -307,7 +371,11 @@ img{
 }
 
 
-/*test*/ 
+@media only screen and (max-width: 1200px){
+    footer div{
+        margin-right: 12%;
+    }
+}
 
 @media only screen and (max-width: 1122px) {
     .vignette{
