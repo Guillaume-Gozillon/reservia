@@ -51,6 +51,10 @@ li{
     flex-wrap: wrap;
 }
 
+.filtres p{
+    font-weight: 600;
+}
+
 /* Stylisation du header */
 
 .intro{
@@ -433,6 +437,15 @@ footer li{
     .module_filtre{
         margin: 6px 10px;
     }
+
+    .filtres{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .module_filtre{
+        margin: 6px 10px 6px 0;
+    }
 }
 
 @media only screen and (max-width: 697px){
@@ -453,4 +466,41 @@ footer li{
     .activites_sub_container{
         margin-bottom: 33px;
     }
+}
+
+@media only screen and (max-width: 540px){
+    .largeur{
+        margin: auto;
+
+        padding: 0;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+
+    nav li:last-child{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    nav img{
+        position: absolute;
+        width: 90px;
+        height: auto;
+        top: 16px;
+        left: 14px;    
+    }
+
+    .menu{
+        margin: 90px 0 0 0;
+        width: 100%;
+    }
+
+    .menu ul{
+        justify-content: space-around;
+        padding: 0;
+    }
+  
 }
