@@ -38,13 +38,17 @@ nav img{
     color: rgb(54, 54, 54);
 }
 
-
 li{
     list-style: none;
 }
 
 .sep{
     margin: 0 35px;
+}
+
+.module_filtre_container{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* Stylisation du header */
@@ -71,7 +75,6 @@ li{
     padding: 10px;
     background-color: #e8e8e8;
 }
-
 
 .fa-star{
     color: #F2F2F2;
@@ -290,8 +293,16 @@ li{
 
 .activites{
     display: flex;
+    flex-direction: row;
     width: 100%;
     justify-content: space-between;
+}
+
+.diviseur{
+    display: flex;
+    width: 47%;
+    justify-content: space-between;
+    min-width: 580px;
 }
 
 .activites_container{
@@ -308,7 +319,7 @@ li{
  
 .activites_container img{
     width: 270px;
-    height: 200px;
+    height: 160px;
     object-fit: cover;
 }
 
@@ -318,7 +329,7 @@ li{
 }
 
 .large img{
-    height: 480px;
+    height: 400px;
 }
 
 .last{
@@ -370,8 +381,26 @@ footer li{
     }
 }
 
+@media only screen and (max-width: 1300px) {
+    .activites{
+        flex-direction: column;
+    }
+    .diviseur{
+        margin: auto;
+    }
+
+    .diviseur:last-child{
+        margin-top: 33px;
+    }
+}
+
 
 @media only screen and (max-width: 1200px){
+    .activites{
+        justify-content: space-around;
+    }
+
+
     footer div{
         margin-right: 12%;
     }
@@ -400,28 +429,28 @@ footer li{
     }
 }
 
-
-/* BACKUP
-@media only screen and (max-width: 1122px) {
-    .container_left{
-        width: 400px;
+@media only screen and (max-width: 897px){
+    .module_filtre{
+        margin: 6px 10px;
     }
 }
 
-@media only screen and (max-width: 1000px) {
-    .vignette{
+@media only screen and (max-width: 697px){
+    .diviseur{
         flex-direction: column;
-        align-items: center;
+        width: initial;
+        min-width: initial;
     }
 
-    .container_left{
-        width: 350px;
-        margin-bottom: 40px;
-        margin-top: 25px;
+    .large img{
+        height: 200px;
     }
 
-    .container_right{
-        width: 43%;
+    .activites_container{
+        margin-bottom: 33px;
+    }
+
+    .activites_sub_container{
+        margin-bottom: 33px;
     }
 }
-
