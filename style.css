@@ -525,7 +525,7 @@ footer li{
     nav li:last-child{
         position: absolute;
         top: 30px;
-        right: -45px;
+        right: 0;
         font-weight: 700;
     }
 
