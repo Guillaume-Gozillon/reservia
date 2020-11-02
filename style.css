@@ -258,7 +258,7 @@ li{
 }
 
 .center_txt p{
-    margin: 0;
+    margin: 0 13px 0 0;
 }
 
 .populaire{
@@ -439,10 +439,8 @@ footer li{
         justify-content: flex-start;
     }
 
-    footer{
-        display: flex;
-        flex-direction: column;
-        height: auto;
+    footer div{
+        margin-right: 10%;
     }
 }
 
@@ -463,6 +461,10 @@ footer li{
     .intro h2{
         line-height: 30px;
     }
+
+    footer div{
+        margin-right: 4%;
+    }
 }
 
 @media only screen and (max-width: 697px){
@@ -482,6 +484,12 @@ footer li{
 
     .activites_sub_container{
         margin-bottom: 33px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: auto;
     }
 }
 
