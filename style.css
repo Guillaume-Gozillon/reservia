@@ -42,6 +42,10 @@ li{
     list-style: none;
 }
 
+.autre p:last-child{
+    display: none;
+}
+
 .sep{
     margin: 0 35px;
 }
@@ -166,8 +170,11 @@ li{
 }
 
 /* Stylisation de la section gauche */
-
+ 
 .container_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #F2F2F2;
     width: 60%;
     border-radius: 20px;
@@ -401,7 +408,7 @@ footer li{
     .diviseur:last-child{
         margin-top: 33px;
     }
-}
+} /* raire passer a 1374 */
 
 @media only screen and (max-width: 1200px){
     .activites{
@@ -496,6 +503,18 @@ footer li{
 @media only screen and (max-width: 540px){
     .intro{
         padding: 0px 20px;
+    }
+
+    .autre p:first-child{
+        display: none;
+    }
+
+    .autre p:last-child{
+        display: block;
+    }
+
+    .autre{
+        border-radius: 10px;
     }
 
     .module{
