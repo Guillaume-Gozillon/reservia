@@ -187,7 +187,7 @@ li{
 
 .container_left p:first-child{
     font-size: 1.1rem;
-    font-weight: 500;
+    font-weight: 800;
 }
 
 .wrap{
@@ -247,7 +247,7 @@ li{
 
 .container_right p{
     display: block;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .centrer{
@@ -262,6 +262,7 @@ li{
     justify-content: space-between;
     max-width: 89%;
     font-size: 1.1rem;
+    font-weight: 800;
 }
 
 .center_txt p{
@@ -349,7 +350,12 @@ li{
 }
 
 .last{
-    margin-top: 100px;
+    margin-top: 60px;
+}
+
+.last h2{
+    font-size: 1.2rem;
+    margin: 30px 0;
 }
 
 .activites_sub_container{
@@ -398,17 +404,27 @@ footer li{
 }
 
 @media only screen and (max-width: 1300px) {
-    .activites{
-        flex-direction: column;
-    }
     .diviseur{
         margin: auto;
+        width: 51%;
+        flex-direction: column;
+        min-width: auto;
     }
 
-    .diviseur:last-child{
-        margin-top: 33px;
+    .large img{
+        width: auto;
     }
-} /* raire passer a 1374 */
+
+    .activites_container{
+        margin: 20px 40px;
+    }
+
+    .activites_container img{
+        width: 100%;
+    }
+} 
+
+/* raire passer a 1374 */
 
 @media only screen and (max-width: 1200px){
     .activites{
@@ -449,6 +465,14 @@ footer li{
     footer div{
         margin-right: 10%;
     }
+
+    .populaire{
+        margin: 15px 0px;
+    }
+
+    .center_txt{
+        margin-left: 4%;
+    }
 }
 
 @media only screen and (max-width: 897px){
@@ -472,6 +496,22 @@ footer li{
     footer div{
         margin-right: 4%;
     }
+
+    footer div:last-child{
+        min-width: auto;
+    }
+
+    .activites{
+        flex-direction: column;
+    }
+
+    .large img{
+        height: 160px;
+    }
+
+    .activites_container{
+        min-width: 82%;
+    }
 }
 
 @media only screen and (max-width: 697px){
@@ -481,22 +521,26 @@ footer li{
         min-width: initial;
     }
 
-    .large img{
-        height: 200px;
-    }
-
-    .activites_container{
-        margin-bottom: 33px;
-    }
-
-    .activites_sub_container{
-        margin-bottom: 33px;
-    }
-
     footer{
         display: flex;
         flex-direction: column;
         height: auto;
+    }
+
+    footer div:last-child{
+        min-width: 220px;
+    }
+
+    footer div:first-child{
+        margin-left: 0;
+    }
+
+    footer div{
+        margin: 12px 0;
+    }
+
+    .vignette{
+        align-items: center;
     }
 }
 
@@ -556,6 +600,14 @@ footer li{
         left: 14px;    
     }
 
+    .fiche{
+        width: 82%;
+    }
+
+    .fiche img{
+        width: 100%;
+    }
+
     .menu{
         margin: 90px 0 0 0;
         width: 100%;
@@ -582,6 +634,10 @@ footer li{
         background-color: white;
     }
 
+    .container_left > p{
+        margin: 30px 8vw 10px;
+    }
+
     .container_right{
         min-width: initial;
         border-radius: 0;
@@ -598,4 +654,16 @@ footer li{
     .sep{
         border-bottom: #F2F2F2 2px solid; 
     } 
+
+    .center_txt{
+        margin: 30px 8vw 10px;
+        justify-content: space-between;
+    }
+
+    .last h2{
+        margin: 30px 8vw 10px;
+    }
 }
+
+
+
