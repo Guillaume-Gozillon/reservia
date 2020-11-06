@@ -663,6 +663,10 @@ footer li{
     .last h2{
         margin: 30px 8vw 10px;
     }
+
+    .populaire{
+        width: 95%;
+    }
 }
 
 
