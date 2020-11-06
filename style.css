@@ -183,6 +183,8 @@ li{
 
 .container_left p{
     margin-left: 2%;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 .container_left p:first-child{
@@ -632,10 +634,11 @@ footer li{
         padding: 0;
         border-radius: 0;
         background-color: white;
+        margin-bottom: 0;
     }
 
     .container_left > p{
-        margin: 30px 8vw 10px;
+        margin: 45px 8vw 10px;
     }
 
     .container_right{
@@ -682,6 +685,14 @@ footer li{
 
     .wrap{
         justify-content: center;
+    }
+
+    .center_container{
+        margin-bottom: 25px;
+    }
+
+    .last{
+        margin-top: 0;
     }
 }
 
