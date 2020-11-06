@@ -671,6 +671,10 @@ footer li{
     .center_container{
         justify-content: center;
     }
+
+    .diviseur{
+        align-items: center;
+    }
 }
 
 
