@@ -675,6 +675,10 @@ footer li{
     .diviseur{
         align-items: center;
     }
+
+    .activites_sub_container{
+        align-items: center;
+    }
 }
 
 
