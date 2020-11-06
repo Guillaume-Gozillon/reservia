@@ -558,7 +558,7 @@ footer li{
     }
 
     .autre{
-        border-radius: 10px;
+        border-radius: 6px;
     }
 
     .module{
@@ -666,6 +666,10 @@ footer li{
 
     .populaire{
         width: 90%;
+    }
+
+    .center_container{
+        justify-content: center;
     }
 }
 
