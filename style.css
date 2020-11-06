@@ -679,6 +679,10 @@ footer li{
     .activites_sub_container{
         align-items: center;
     }
+
+    .wrap{
+        justify-content: center;
+    }
 }
 
 
