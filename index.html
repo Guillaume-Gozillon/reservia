@@ -16,9 +16,9 @@
                     <img src="img/logo/Reservia@3x.png" alt="logo">
                     <div class="menu">
                         <ul>
-                            <li><a class="un" href="#">Hébergement</a></li>
-                            <li class="sep"><a href="#">Activités</a></li>
-                            <li><a class="trois" href="#">S'inscrire</a></li>
+                            <li><a id="un" href="#container_left">Hébergement</a></li>
+                            <li id="sep"><a href="#last">Activités</a></li>
+                            <li><a id="trois" href="#">S'inscrire</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -33,7 +33,7 @@
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
                     <div class="search">
-                        <p>Marseille, France</p>
+                        <input type="text" name="box" placeholder="Marseille, France">
                     </div>
                     <div class="autre">
                         <p>Rechercher</p>
@@ -77,14 +77,14 @@
                 </div>
             </section>
             <section class="vignette">
-                <div class="container_left">
+                <div id="container_left">
                     <h2>Hébergement à Marseille</h2>
                     <div class="wrap">
                         <article class="fiche">
                             <img src="img/hebergements/marcus-loke.jpg" alt="Cannebière">
                             <div>
-                                <p>Auberge la Cannebière</p>
-                                <p>Nuit à partir de 25€</p>
+                                <h3>Auberge la Cannebière</h3>
+                                <p>Nuit à partir de <span class="bigger_weigh">25€</span></p>
                                 <i class="fas fa-star blue-star"></i>
                                 <i class="fas fa-star blue-star"></i>
                                 <i class="fas fa-star blue-star"></i>
@@ -95,7 +95,7 @@
                         <article class="fiche">
                             <img src="img/hebergements/fred-kleber.jpg" alt="port">
                             <div>
-                                <p>Hôtel du port</p>
+                                <h3>Hôtel du port</h3>
                                 <p>Nuit à partir de 52€</p>
                                 <i class="fas fa-star blue-star"></i>
                                 <i class="fas fa-star blue-star"></i>
@@ -107,7 +107,7 @@
                         <article class="fiche">
                             <img src="img/hebergements/reisetopia.jpg" alt="mouettes">
                             <div>
-                                <p>Hôtel Les mouettes</p>
+                                <h3>Hôtel Les mouettes</h3>
                                 <p>Nuit à partir de 76€</p>
                                 <i class="fas fa-star blue-star"></i>
                                 <i class="fas fa-star blue-star"></i>
@@ -119,7 +119,7 @@
                         <article class="fiche">
                             <img src="img/hebergements/annie-spratt.jpg" alt="hotel_la_mer">
                             <div>
-                                <p>Hôtel de la mer</p>
+                                <h3>Hôtel de la mer</h3>
                                 <p>Nuit à partir de 46€</p>
                                 <i class="fas fa-star blue-star"></i>
                                 <i class="fas fa-star blue-star"></i>
@@ -131,8 +131,8 @@
                         <article class="fiche">
                             <img src="img/hebergements/nicate-lee-kT.jpg" alt="Panier">
                             <div>
-                                <p>Auberge Le Panier</p>
-                                <p>Nuit à partir de 23€</p>
+                                <h3>Auberge Le Panier</h3>
+                                <p>Nuit à partir de <span class="bigger_weigh">23€</span></p>
                                 <i class="fas fa-star blue-star"></i>
                                 <i class="fas fa-star blue-star"></i>
                                 <i class="fas fa-star blue-star"></i>
@@ -143,7 +143,7 @@
                         <article class="fiche">
                             <img src="img/hebergements/febrian-zakaria.jpg" alt="amina">
                             <div>
-                                <p>Hôtel chez Amia</p>
+                                <h3>Hôtel chez Amia</h3>
                                 <p>Nuit à partir de 96€</p>
                                 <i class="fas fa-star blue-star"></i>
                                 <i class="fas fa-star blue-star"></i>
@@ -166,7 +166,7 @@
                                 <img src="img/hebergements/emile-guillemot.jpg" alt="soleil_du_matin">
                                 <div class="populaire__container">
                                     <div>
-                                        <p>Hôtel Le soleil du matin</p>
+                                        <h3>Hôtel Le soleil du matin</h3>
                                         <p>Nuit à partir de 128€</p>
                                     </div>
                                     <div>
@@ -182,7 +182,7 @@
                                 <img src="img/hebergements/aw-creative.jpg" alt="coeur_de_l'eau">
                                 <div class="populaire__container">
                                     <div>
-                                        <p>Au cœur de l'eau<br>Chambre d'hôtes</p>
+                                        <h3>Au cœur de l'eau<br>Chambre d'hôtes</h3>
                                         <p>Nuit à partir de 71€</p>
                                     </div>
                                     <div>
@@ -198,7 +198,7 @@
                                 <img src="img/hebergements/febrian-zakaria-2.jpg" alt="bleu_et_blanc">
                                 <div class="populaire__container">
                                     <div>
-                                        <p>Hôtel Tout Bleu et <br>Blanc</p>
+                                        <h3>Hôtel Tout Bleu et <br>Blanc</h3>
                                         <p>Nuit à partir de 68€</p>
                                     </div>
                                     <div>
@@ -214,7 +214,7 @@
                     </div>
                 </div>
             </section>
-            <article class="last">
+            <article id="last">
                 <h2>Activités à Marseille</h2>
                     <div class="activites">
                         <div class="diviseur">
@@ -224,11 +224,11 @@
                             </div>
                             <div class="activites_sub_container">
                                 <div class="activites_container">
-                                    <img src="img/activites/paul-hermann.jpg" alt="pomegues">
+                                    <img id="grande" src="img/activites/paul-hermann.jpg" alt="pomegues">
                                     <p>Fort de Pomègues</p>
                                 </div>
                                 <div class="activites_container">
-                                    <img src="img/activites/kevin-hikari.jpg" alt="frioul">
+                                    <img id="petite" src="img/activites/kevin-hikari.jpg" alt="frioul">
                                     <p>îles du Frioul</p>
                                 </div>
                             </div>
@@ -240,11 +240,11 @@
                         </div>
                         <div class="activites_sub_container">
                             <div class="activites_container">
-                                <img src="img/activites/florian-wehde.jpg" alt="notre-dame-de-la-garde">
+                                <img id="moyenne" src="img/activites/florian-wehde.jpg" alt="notre-dame-de-la-garde">
                                 <p>Notre-Dame-de-la-Garde</p>
                             </div>        
                             <div class="activites_container">
-                                <img src="img/activites/lena-paulin.jpg" alt="longchamp">
+                                <img id="medium" src="img/activites/lena-paulin.jpg" alt="longchamp">
                                 <p>Parc Longchamp</p>
                             </div>
                         </div>
@@ -272,7 +272,7 @@
                 <h2>Assistance</h2>
                 <ul>
                     <li>Centre d'aide</li>
-                    <li>Nous conntacter</li>
+                    <li>Nous contacter</li>
                 </ul>
             </div>
         </footer>

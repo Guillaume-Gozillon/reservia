@@ -9,7 +9,7 @@ body{
 .largeur{
     margin: auto;
     max-width: 1280px;
-    padding: 25px 50px;
+    padding: 5px 50px 25px;
 }
 
 nav{
@@ -29,14 +29,22 @@ nav img{
 
 .menu a{
     display: flex;
-    color: #0065FC;
+    color: rgb(54, 54, 54);
     text-decoration: none;
     font-weight: 500;
+    padding-top: 20px;
 }
 
 .menu a:hover{
-    color: rgb(54, 54, 54);
+    color: #0065FC;
+    border-top: #0085f9 solid 2px;
 }
+
+.menu li #trois{
+    color: #0065FC;
+    font-weight: 600;
+}
+
 
 li{
     list-style: none;
@@ -46,7 +54,7 @@ li{
     display: none;
 }
 
-.sep{
+#sep{
     margin: 0 35px;
 }
 
@@ -92,17 +100,26 @@ li{
 }
 
 .search{
-    padding: 10px;
+    padding: 0 10px;
 }
 
-.search p{
+.search input{
     margin: 0 65px 0 0;
+    border: none;
+    color: black;
+    font-size: 0.99rem;
+    outline: thin;
+}
+
+.bigger_weigh{
+    font-weight: 500;
 }
 
 .autre{
     padding: 10px;
     background-color: #0065FC;
     color: white;
+    cursor: pointer;
 }
 
 .filtres{
@@ -119,6 +136,12 @@ li{
     height: 35px;
     margin: 0 10px;
     box-sizing: border-box;
+    transition: background-color 0.2s ease;
+}
+
+.module_filtre:hover{
+background-color: rgb(54 54 54 / 5%);
+cursor: pointer;
 }
 
 .module_filtre div{
@@ -171,7 +194,7 @@ li{
 
 /* Stylisation de la section gauche */
  
-.container_left{
+#container_left{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -181,13 +204,11 @@ li{
     padding: 13px 25px;
 }
 
-.container_left p{
-    margin-left: 2%;
+#container_left p{
     font-size: 1rem;
-    font-weight: 500;
 }
 
-.container_left h2{
+#container_left h2{
     font-size: 1.1rem;
     font-weight: 800;
 }
@@ -222,8 +243,13 @@ li{
     object-fit: cover;
 }
 
+h3{
+    margin: 6px 0px;
+}
+
 .fiche p{
     margin: 9px 0px;
+    font-weight: 100;
 }
 
 .fiche div{
@@ -307,7 +333,7 @@ li{
     justify-content: space-around;
 }
 
-.populaire__container p:last-child{
+.populaire__container p{
     font-weight: 100;
 }
 
@@ -345,6 +371,14 @@ li{
     object-fit: cover;
 }
 
+#grande, #moyenne{
+    height: 180px;
+}
+
+#petite, #moyenne{
+    height: 120px;
+}
+
 .activites_container p{
     font-weight: 600;
     margin-left: 19px;
@@ -354,11 +388,11 @@ li{
     height: 400px;
 }
 
-.last{
+#last{
     margin-top: 60px;
 }
 
-.last h2{
+#last h2{
     font-size: 1.2rem;
     margin: 30px 0;
 }
@@ -398,7 +432,7 @@ footer li{
 }
 
 @media only screen and (max-width: 1374px) {
-    .container_left{
+    #container_left{
         width: 50%;
     }
 
@@ -434,7 +468,7 @@ footer li{
         flex-direction: column;
     }
 
-    .container_left{
+    #container_left{
         width: 95%;
         margin-bottom: 30px;
     }
@@ -508,6 +542,10 @@ footer li{
 
     .activites_container{
         min-width: 82%;
+    }
+
+    #petite, #grande, #medium, #moyenne{
+        height: 160px;
     }
 }
 
@@ -624,7 +662,7 @@ footer li{
         height: 28px;
     }
 
-    .container_left{
+    #container_left{
         width: 100%;
         padding: 0;
         border-radius: 0;
@@ -632,7 +670,7 @@ footer li{
         margin-bottom: 0;
     }
 
-    .container_left > h2{
+    #container_left > h2{
         margin: 45px 8vw 10px;
     }
 
@@ -645,12 +683,13 @@ footer li{
         padding: 0;
     }
 
-    .un{
+    #un{
         border-bottom: #0065FC 2.5px solid; 
     }
 
-    .sep{
+    #sep{
         border-bottom: #F2F2F2 2px solid; 
+        margin: auto;
     } 
 
     .center_txt{
@@ -658,7 +697,7 @@ footer li{
         justify-content: space-between;
     }
 
-    .last h2{
+    #last h2{
         margin: 30px 8vw 10px;
     }
 
@@ -690,8 +729,12 @@ footer li{
         margin-bottom: 25px;
     }
 
-    .last{
+    #last{
         margin-top: 0;
+    }
+
+    .menu a:hover{
+        border-top:none;
     }
 }
 
